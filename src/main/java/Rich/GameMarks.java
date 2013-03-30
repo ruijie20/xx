@@ -1,5 +1,8 @@
 package Rich;
 
+import Rich.Tool.BlockTool;
+import Rich.Tool.BombTool;
+
 /**
  * Created with IntelliJ IDEA.
  * User: flocl

@@ -1,4 +1,7 @@
-package Rich;
+package Rich.Command;
+
+import Rich.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: flocl

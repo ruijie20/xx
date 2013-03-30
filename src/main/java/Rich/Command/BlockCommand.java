@@ -1,21 +1,26 @@
-package Rich;
+package Rich.Command;
+
+import Rich.*;
+import Rich.Tool.BlockTool;
+import Rich.Tool.GameTool;
 
 /**
  * Created with IntelliJ IDEA.
  * User: flocl
  * Date: 13-2-10
- * Time: 下午4:00
+ * Time: 下午3:27
  * To change this template use File | Settings | File Templates.
  */
-public class BombCommand extends Command {
+public class BlockCommand extends Command {
     public static final int MAP_LOWER_RANGE = 0;
     public static final int MAP_UPPER_RANGE = 69;
     GameMarks gameMarks = new GameMarks();
     private int offset;
-    BombTool bombTool = new BombTool();
-    public String bomb = "bomb";
+    BlockTool blockTool = new BlockTool();
+    public String block = "block";
 
-    public BombCommand(){
+    public BlockCommand(){
+
     }
 
     public void setOffset(int offset) {
@@ -26,11 +31,11 @@ public class BombCommand extends Command {
         if (HasTool(gameRole)) return;
         int temp = gameRole.getPosition() + offset;
         if (IsInMap(temp) &&IsNoToolsAndRoles(mapWithoutRole, mapWithRole, temp)){
-            mapWithRole.getLand(temp).setMark(gameMarks.bomb);
+            mapWithRole.getLand(temp).setMark(gameMarks.block);
             return;
         }
         else{
-            System.out.println("此处不可设置" + bombTool.name);
+            System.out.println("此处不可设置" + blockTool.name);
             return;
         }
     }
@@ -39,7 +44,7 @@ public class BombCommand extends Command {
         int i = 0;
         for (; i < gameRole.getTools().size(); i ++){
             GameTool tool = gameRole.getTools().get(i);
-            if (tool.getName().equals("炸弹")){
+            if (tool.getName().equals("路障")){
                 gameRole.getTools().remove(i);
                 break;
             }
@@ -60,6 +65,6 @@ public class BombCommand extends Command {
     }
 
     public String getHelp(){
-        return "bomb n         在距离自己位置的n处设置炸弹，n在[-10,10]内，负数表示后方。";
+        return "block n        在距离自己位置的n处设置路障，n在[-10,10]内，负数表示后方。";
     }
 }

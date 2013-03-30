@@ -1,5 +1,8 @@
 package Rich;
 
+import Rich.Tool.BlockTool;
+import Rich.Tool.BombTool;
+import Rich.Tool.RobotTool;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

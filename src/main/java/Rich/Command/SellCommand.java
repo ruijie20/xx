@@ -1,4 +1,10 @@
-package Rich;
+package Rich.Command;
+
+import Rich.Command.Command;
+import Rich.GameMap;
+import Rich.GameMarks;
+import Rich.GameRole;
+import Rich.Land;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,7 +13,7 @@ package Rich;
  * Time: 下午12:01
  * To change this template use File | Settings | File Templates.
  */
-public class SellCommand extends Command{
+public class SellCommand extends Command {
     public static final int NOOWNER = 0;
     GameMarks gameMarks = new GameMarks();
     private int num;

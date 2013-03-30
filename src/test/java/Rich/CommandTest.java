@@ -1,5 +1,9 @@
 package Rich;
 
+import Rich.Command.HelpCommand;
+import Rich.Command.QueryCommand;
+import Rich.Command.RobotCommand;
+import Rich.Command.RollCommand;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

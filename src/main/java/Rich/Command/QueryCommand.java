@@ -1,4 +1,8 @@
-package Rich;
+package Rich.Command;
+
+import Rich.Command.Command;
+import Rich.GameMap;
+import Rich.GameRole;
 
 /**
  * Created with IntelliJ IDEA.

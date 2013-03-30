@@ -1,4 +1,9 @@
-package Rich;
+package Rich.Command;
+
+import Rich.GameMap;
+import Rich.GameMarks;
+import Rich.GameRole;
+import Rich.Tool.GameTool;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,7 +12,7 @@ package Rich;
  * Time: 下午2:37
  * To change this template use File | Settings | File Templates.
  */
-public class RobotCommand extends Command{
+public class RobotCommand extends Command {
     GameMarks gameMarks = new GameMarks();
     public String robot = "robot";
 

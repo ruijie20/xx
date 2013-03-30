@@ -1,4 +1,8 @@
-package Rich;
+package Rich.Command;
+
+import Rich.Command.Command;
+import Rich.GameMap;
+import Rich.GameRole;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,7 +11,7 @@ package Rich;
  * Time: 下午2:49
  * To change this template use File | Settings | File Templates.
  */
-public class QuitCommand extends Command{
+public class QuitCommand extends Command {
     public String quit = "quit";
 
     public QuitCommand(){

@@ -1,4 +1,10 @@
-package Rich;
+package Rich.Command;
+
+import Rich.*;
+import Rich.Tool.BlockTool;
+import Rich.Tool.BombTool;
+import Rich.Tool.GameTool;
+import Rich.Tool.RobotTool;
 
 import java.util.Scanner;
 
@@ -9,7 +15,7 @@ import java.util.Scanner;
  * Time: 下午5:08
  * To change this template use File | Settings | File Templates.
  */
-public class RollCommand extends Command{
+public class RollCommand extends Command {
     public static final int HOSPITAL_DAYS = 3;
     public static final int PRISON_DAYS = 2;
     public static final int HOSPITAL_LAND_NUM = 14;

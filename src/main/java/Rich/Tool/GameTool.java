@@ -1,4 +1,4 @@
-package Rich;
+package Rich.Tool;
 
 /**
  * Created with IntelliJ IDEA.

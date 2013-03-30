@@ -176,7 +176,13 @@
     </group>
   </component>
   <component name="ProjectDictionaryState">
-    <dictionary name="flocl" />
+    <dictionary name="flocl">
+      <words>
+        <w>fusesource</w>
+        <w>jansi</w>
+        <w>junit</w>
+      </words>
+    </dictionary>
   </component>
   <component name="ProjectModuleManager">
     <modules>

@@ -1,5 +1,4 @@
 package Rich;
-
 import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 import static org.fusesource.jansi.Ansi.*;
@@ -7,13 +6,6 @@ import static org.fusesource.jansi.Ansi.Color.*;
 
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-6
- * Time: 下午2:36
- * To change this template use File | Settings | File Templates.
- */
 public class GameMap {
     //public static final String RED = "\u001B[0;31m";
     //public static final String YELLOW = "\u001B[0;33m";

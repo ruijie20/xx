@@ -1,4 +1,8 @@
-package Rich;
+package Rich.Command;
+
+import Rich.GameMap;
+import Rich.GameRole;
+import Rich.Tool.GameTool;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,7 +11,7 @@ package Rich;
  * Time: 下午12:27
  * To change this template use File | Settings | File Templates.
  */
-public class SellToolCommand extends Command{
+public class SellToolCommand extends Command {
     private int num;
     public String SellTool = "selltool";
 

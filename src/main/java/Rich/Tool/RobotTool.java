@@ -1,4 +1,6 @@
-package Rich;
+package Rich.Tool;
+
+import Rich.Tool.GameTool;
 
 /**
  * Created with IntelliJ IDEA.

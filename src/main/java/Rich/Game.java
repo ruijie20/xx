@@ -4,8 +4,9 @@ package Rich;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Iterator;
-import org.fusesource.jansi.Ansi;
-import org.fusesource.jansi.AnsiConsole;
+
+import Rich.Command.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: flocl

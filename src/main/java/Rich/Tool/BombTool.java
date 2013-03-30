@@ -1,17 +1,17 @@
-package Rich;
+package Rich.Tool;
 
 /**
  * Created with IntelliJ IDEA.
  * User: flocl
  * Date: 13-2-7
- * Time: 下午2:38
+ * Time: 下午2:27
  * To change this template use File | Settings | File Templates.
  */
-public class BlockTool extends GameTool {
-    public BlockTool(){
+public class BombTool extends GameTool {
+    public BombTool(){
         points = 50;
-        name = "路障";
-        mark = "#";
-        num = 1;
+        name = "炸弹";
+        mark = "@";
+        num = 3;
     }
 }

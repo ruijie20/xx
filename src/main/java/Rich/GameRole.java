@@ -1,5 +1,7 @@
 package Rich;
 
+import Rich.Tool.GameTool;
+
 import java.util.ArrayList;
 
 /**
