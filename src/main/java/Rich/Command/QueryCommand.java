@@ -12,7 +12,7 @@ import Rich.GameRole;
  * To change this template use File | Settings | File Templates.
  */
 public class QueryCommand extends Command {
-    public String query = "query";
+    private String query = "query";
 
     public QueryCommand(){
 
@@ -38,6 +38,10 @@ public class QueryCommand extends Command {
         if (gameRole.getSkyscraperLandAmount() != 0){
             System.out.println("摩天楼编号:"+gameRole.getSkyscraperLandNum());
         }
+    }
+
+    public String getCommand(){
+        return query;
     }
 
     public String getHelp(){

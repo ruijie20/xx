@@ -25,18 +25,14 @@ public class Game {
     private GameMap mapWithoutRoles;
     private GameMap mapWithRoles;
     private RollCommand rollCommand;
-    private RobotCommand robotCommand;
-    private BlockCommand blockCommand;
-    private BombCommand bombCommand;
-    private SellToolCommand sellToolCommand;
-    private SellCommand sellCommand;
+
     public static final int NOOWNER = 0;
     public static final int GOVERNMENT = 100;
     Scanner scanner = new Scanner(System.in);
     int fund;
-    private QueryCommand queryCommand;
-    private QuitCommand quitCommand;
-    private HelpCommand helpCommand;
+
+    CommandCreater commandCreater = new CommandCreater();
+
 
     public Game(){
         gameRoles = new ArrayList<GameRole>();
@@ -67,9 +63,8 @@ public class Game {
             }
         }
 
-        initializeCommand();
         Iterator<GameRole> roleIter;
-
+        rollCommand = new RollCommand();
         while (true){
             roleIter = gameRolesChosen.iterator();
             Loop: while (roleIter.hasNext()){
@@ -80,7 +75,7 @@ public class Game {
                 while (true){
                     System.out.println(role.getName() + ">");
                     String lowercaseCommand = getCommand();
-                    if (lowercaseCommand.equals(rollCommand.roll)){
+                    if (lowercaseCommand.equals(rollCommand.getCommand())){
                         rollCommand.executeCommand(mapWithoutRoles,mapWithRoles,role);
                         if (IsWinner(role)) return;
                         IsPayFee(role);
@@ -99,14 +94,7 @@ public class Game {
                         }
                         break;
                     }
-                    executeQueryCommand(role, lowercaseCommand);
-                    executeHelpCommand(role, lowercaseCommand);
-                    executeRobotCommand(role, lowercaseCommand);
-                    executeBlockCommand(role, lowercaseCommand);
-                    executeBombCommand(role, lowercaseCommand);
-                    executeSellCommand(role, lowercaseCommand);
-                    executeSellToolCommand(role, lowercaseCommand);
-                    executeQuitCommand(role, lowercaseCommand);
+                    commandCreater.handleCommand(role, lowercaseCommand, mapWithoutRoles, mapWithRoles);
                 }
             }
             if (gameRolesChosen.size() < 2){
@@ -124,68 +112,6 @@ public class Game {
         return false;
     }
 
-    private void executeQuitCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(quitCommand.quit)){
-            quitCommand.executeCommand(mapWithoutRoles,mapWithRoles,role);
-        }
-    }
-
-    private void executeSellToolCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(sellToolCommand.SellTool)){
-            int toolNum = scanner.nextInt();
-            sellToolCommand.setToolNum(toolNum);
-            sellToolCommand.executeCommand(mapWithoutRoles, mapWithRoles,role);
-            return;
-        }
-    }
-
-    private void executeSellCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(sellCommand.Sell)){
-            int landNum = scanner.nextInt();
-            sellCommand.setLandNum(landNum);
-            sellCommand.executeCommand(mapWithoutRoles, mapWithRoles,role);
-            return;
-        }
-    }
-
-    private void executeBombCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(bombCommand.bomb)){
-            int offset = scanner.nextInt();
-            bombCommand.setOffset(offset);
-            bombCommand.executeCommand(mapWithoutRoles, mapWithRoles, role);
-            return;
-        }
-    }
-
-    private void executeBlockCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(blockCommand.block)){
-            int offset = scanner.nextInt();
-            blockCommand.setOffset(offset);
-            blockCommand.executeCommand(mapWithoutRoles, mapWithRoles,role);
-            return;
-        }
-    }
-
-    private void executeRobotCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(robotCommand.robot)){
-            robotCommand.executeCommand(mapWithoutRoles, mapWithRoles, role);
-            return;
-        }
-    }
-
-    private void executeHelpCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(helpCommand.help)){
-            helpCommand.executeCommand(mapWithoutRoles,mapWithRoles,role);
-            return;
-        }
-    }
-
-    private void executeQueryCommand(GameRole role, String lowercaseCommand) {
-        if (lowercaseCommand.equals(queryCommand.query)){
-            queryCommand.executeCommand(mapWithoutRoles,mapWithRoles,role);
-            return;
-        }
-    }
 
 
     private void IsPayFee(GameRole role) {
@@ -255,18 +181,6 @@ public class Game {
         return false;
     }
 
-    private void initializeCommand() {
-        rollCommand = new RollCommand();
-        blockCommand = new BlockCommand();
-        bombCommand = new BombCommand();
-        sellCommand = new SellCommand();
-        sellToolCommand = new SellToolCommand();
-        queryCommand = new QueryCommand();
-        quitCommand = new QuitCommand();
-        robotCommand = new RobotCommand();
-        helpCommand = new HelpCommand();
-
-    }
 
     private void IsMascot(GameRole role) {
         if (role.getMascotRound() != 0){

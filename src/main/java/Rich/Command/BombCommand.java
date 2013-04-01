@@ -17,13 +17,17 @@ public class BombCommand extends Command {
     GameMarks gameMarks = new GameMarks();
     private int offset;
     BombTool bombTool = new BombTool();
-    public String bomb = "bomb";
+    private String bomb = "bomb";
 
     public BombCommand(){
     }
 
     public void setOffset(int offset) {
         this.offset = offset;
+    }
+
+    public String getCommand(){
+        return bomb;
     }
 
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole,GameRole gameRole){
@@ -34,7 +38,7 @@ public class BombCommand extends Command {
             return;
         }
         else{
-            System.out.println("此处不可设置" + bombTool.name);
+            System.out.println("此处不可设置" + bombTool.getName());
             return;
         }
     }

@@ -2,74 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e619af28-f7ab-4f5c-830a-7514ed5bab3b" name="Default" comment="">
-      <change type="DELETED" beforePath="G:\Rich\xx\src\main\java\Rich\Command.java" afterPath="" />
-      <change type="DELETED" beforePath="G:\Rich\xx\src\main\java\Rich\SellCommand.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Rich/CommandTest.java" afterPath="$PROJECT_DIR$/src/test/java/Rich/CommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/CommandCreater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/BlockCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/BlockCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/BombCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/BombCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/Command.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/Command.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Game.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/GameMap.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/GameMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/GameMarks.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/GameMarks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/GameRole.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/GameRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Rich/GameToolTest.java" afterPath="$PROJECT_DIR$/src/test/java/Rich/GameToolTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rich.iml" afterPath="$PROJECT_DIR$/Rich.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rich.ipr" afterPath="$PROJECT_DIR$/Rich.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/HelpCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/HelpCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/QueryCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/QueryCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/QuitCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/QuitCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rich.iws" afterPath="$PROJECT_DIR$/Rich.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\BlockCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/BlockCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\BlockTool.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Tool/BlockTool.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\BombCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/BombCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\BombTool.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Tool/BombTool.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\Command.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/Command.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\GameTool.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Tool/GameTool.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\HelpCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/HelpCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\QueryCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/QueryCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\QuitCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/QuitCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\RobotCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/RobotCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\RobotTool.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Tool/RobotTool.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\RollCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/RollCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\SellCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/SellCommand.java" />
-      <change type="MOVED" beforePath="G:\Rich\xx\src\main\java\Rich\SellToolCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/SellToolCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/RobotCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/RobotCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/RollCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/RollCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/SellCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/SellCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rich/Command/SellToolCommand.java" afterPath="$PROJECT_DIR$/src/main/java/Rich/Command/SellToolCommand.java" />
     </list>
     <ignored path="Rich.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360827598015" ignored="false" />
     <file path="/MapTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360137262126" ignored="false" />
     <file path="/LandTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360131710381" ignored="false" />
-    <file path="/fragment.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364627511826" ignored="false" />
+    <file path="/fragment.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364799893781" ignored="false" />
     <file path="/Land.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360314924141" ignored="false" />
     <file path="/GameMap.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364627113437" ignored="false" />
     <file path="/GameMapTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360478928054" ignored="false" />
     <file path="/RoleTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360138455296" ignored="false" />
     <file path="/GameRole.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360825193417" ignored="false" />
     <file path="/GameRoleTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360817785098" ignored="false" />
-    <file path="/Dummy.txt" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364626265515" ignored="false" />
+    <file path="/Dummy.txt" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364798888406" ignored="false" />
     <file path="/GameToolTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360297603779" ignored="false" />
     <file path="/GameTool.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360729938122" ignored="false" />
     <file path="/Bomb.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360297518400" ignored="false" />
     <file path="/Block.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360259387628" ignored="false" />
     <file path="/Robot.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360300430869" ignored="false" />
     <file path="/CommandTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360824046745" ignored="false" />
-    <file path="/Command.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360738795439" ignored="false" />
+    <file path="/Command.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804046655" ignored="false" />
     <file path="/ComandSet.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360227648597" ignored="false" />
     <file path="/CommandSetTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360226981257" ignored="false" />
     <file path="/CommandSet.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360227446078" ignored="false" />
     <file path="/Roll.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360300153401" ignored="false" />
     <file path="/GameMarks.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360486648951" ignored="false" />
-    <file path="/RollCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360826205012" ignored="false" />
-    <file path="/RobotCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360761219563" ignored="false" />
-    <file path="/BlockCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360741673773" ignored="false" />
-    <file path="/BombCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360741654574" ignored="false" />
-    <file path="/Game.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1363764092057" ignored="false" />
-    <file path="/SellCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360830928038" ignored="false" />
-    <file path="/SellToolCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360830915221" ignored="false" />
+    <file path="/RollCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804936853" ignored="false" />
+    <file path="/RobotCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804912590" ignored="false" />
+    <file path="/BlockCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804807314" ignored="false" />
+    <file path="/BombCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804131972" ignored="false" />
+    <file path="/Game.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364805472303" ignored="false" />
+    <file path="/SellCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804902894" ignored="false" />
+    <file path="/SellToolCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804944852" ignored="false" />
     <file path="/RobotTool.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360729965620" ignored="false" />
     <file path="/BombTool.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360729988314" ignored="false" />
     <file path="/BlockTool.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360730000017" ignored="false" />
-    <file path="/QueryCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360821709776" ignored="false" />
-    <file path="/QuitCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360759458452" ignored="false" />
-    <file path="/HelpCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360741503467" ignored="false" />
+    <file path="/QueryCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804924729" ignored="false" />
+    <file path="/QuitCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804929511" ignored="false" />
+    <file path="/HelpCommand.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804278424" ignored="false" />
     <file path="/GameMain.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360755263499" ignored="false" />
     <file path="/GameMainTest.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360755455162" ignored="false" />
     <file path="/EmptyTool.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1360816907087" ignored="false" />
+    <file path="/CommandFactory.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364800584591" ignored="false" />
+    <file path="/CommandCreater.java" changelist="e619af28-f7ab-4f5c-830a-7514ed5bab3b" time="1364804871882" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +78,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -124,6 +112,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -134,37 +123,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="RollCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/RollCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="33" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/SellCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="11" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/QueryCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuitCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/QuitCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="63" selection-start="4002" selection-end="4002" vertical-scroll-proportion="0.0">
+            <state line="61" column="63" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Command.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/Command.java">
+      <file leaf-file-name="CommandCreater.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/CommandCreater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="242" selection-end="242" vertical-scroll-proportion="0.39078155">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameMain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="37" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="48" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+            <state line="27" column="60" selection-start="801" selection-end="801" vertical-scroll-proportion="0.23847695">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,10 +179,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="CommandTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Rich/CommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="77" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+            <state line="20" column="95" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,22 +207,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Rich/GameMainTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/QuitCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/RobotCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/GameMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/EmptyTool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/Land.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/QueryCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/GameRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/RollCommand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Rich/CommandTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Rich/GameRoleTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rich/SellToolCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rich/SellCommand.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Rich/GameMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/BombCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/HelpCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/BlockCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/SellCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/RobotCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/QueryCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/QuitCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/RollCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/SellToolCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rich/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rich/Command/CommandCreater.java" />
       </list>
     </option>
   </component>
@@ -375,150 +382,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/test/java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Rich">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rich" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -551,10 +414,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Maven: junit:junit:4.8.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junit-4.8.2.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -705,11 +564,157 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rich" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/test/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Rich">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/Rich/Command" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
@@ -722,9 +727,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -734,8 +739,8 @@
       <recent name="Rich" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Rich.Tool" />
       <recent name="Rich.Command" />
+      <recent name="Rich.Tool" />
       <recent name="Rich" />
     </key>
   </component>
@@ -852,7 +857,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -868,19 +879,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -908,6 +906,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -954,10 +965,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.GameMain" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GameMapTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LandTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.GameToolTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LandTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GameRoleTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GameRoleTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.GameMapTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1014,13 +1025,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1554" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28689885" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28628495" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5074627" sideWeight="0.5008091" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1029,11 +1041,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1778761" sideWeight="0.21416804" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.7379768" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19650067" sideWeight="0.70572567" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2942743" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16419919" sideWeight="0.70572567" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2942743" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1098,123 +1109,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Tool/GameTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="332" column="36" selection-start="12132" selection-end="12132" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Tool/BombTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="81" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="75" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="332" column="36" selection-start="12132" selection-end="12132" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="72" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="332" column="36" selection-start="12132" selection-end="12132" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="11" selection-start="3917" selection-end="3917" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="77" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="37" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="63" selection-start="4002" selection-end="4002" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="242" selection-end="242" vertical-scroll-proportion="0.39078155">
+        <state line="16" column="31" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/BlockCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="74" selection-start="1185" selection-end="1185" vertical-scroll-proportion="1.1083333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/BombCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/RobotCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="11" selection-start="366" selection-end="366" vertical-scroll-proportion="0.52219874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/SellToolCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="55" selection-start="387" selection-end="387" vertical-scroll-proportion="0.18181819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/HelpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="69" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.9408034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/QueryCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/SellCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/RollCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="33" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/GameMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.45691383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Rich/CommandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="95" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/QuitCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="63" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rich/Command/CommandCreater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="60" selection-start="801" selection-end="801" vertical-scroll-proportion="0.23847695">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

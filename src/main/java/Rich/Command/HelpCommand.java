@@ -18,8 +18,12 @@ public class HelpCommand extends Command {
     public QueryCommand queryCommand = new QueryCommand();
     public QuitCommand quitCommand = new QuitCommand();
     public RobotCommand robotCommand = new RobotCommand();
-    public String help = "help";
+    private String help = "help";
     public HelpCommand(){
+    }
+
+    public String getCommand(){
+        return help;
     }
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole,GameRole gameRole){
         System.out.println(rollCommand.getHelp());

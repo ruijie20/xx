@@ -14,7 +14,7 @@ public abstract class Command {
 
     public Command() {
     }
-
+    public abstract String getCommand();
     public abstract void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole, GameRole gameRole);
     public String getHelp(){
         return "";

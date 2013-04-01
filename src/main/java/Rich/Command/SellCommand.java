@@ -1,6 +1,5 @@
 package Rich.Command;
 
-import Rich.Command.Command;
 import Rich.GameMap;
 import Rich.GameMarks;
 import Rich.GameRole;
@@ -18,13 +17,17 @@ public class SellCommand extends Command {
     GameMarks gameMarks = new GameMarks();
     private int num;
     private int sellTimes = 2;
-    public String Sell = "sell";
+    private String sell = "sell";
 
     public SellCommand(){
     }
 
     public void setLandNum(int num) {
         this.num = num;
+    }
+
+    public String getCommand(){
+        return sell;
     }
 
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole, GameRole gameRole){
@@ -56,6 +59,6 @@ public class SellCommand extends Command {
     }
 
     public String getHelp(){
-        return "Sell x         出售自己拥有的地产，x为地产编号。";
+        return "sell x         出售自己拥有的地产，x为地产编号。";
     }
 }

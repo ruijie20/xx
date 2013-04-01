@@ -22,9 +22,14 @@ public class RollCommand extends Command {
     GameMarks gameMarks = new GameMarks();
     public static final int GOVERNMENT = 100;
     public static final int NOOWNER = 0;
-    public String roll = "roll";
+    private String roll = "roll";
     public RollCommand() {
     }
+
+    public String getCommand(){
+        return roll;
+    }
+
     public void executeCommand(GameMap mapWithoutRoles, GameMap mapWithRoles,GameRole gameRole){
         int steps = (int) (Math.random() * 5 + 1);
         System.out.println("您掷出点数为:"+steps);

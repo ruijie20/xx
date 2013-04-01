@@ -17,7 +17,7 @@ public class BlockCommand extends Command {
     GameMarks gameMarks = new GameMarks();
     private int offset;
     BlockTool blockTool = new BlockTool();
-    public String block = "block";
+    private String block = "block";
 
     public BlockCommand(){
 
@@ -25,6 +25,10 @@ public class BlockCommand extends Command {
 
     public void setOffset(int offset) {
         this.offset = offset;
+    }
+
+    public String getCommand(){
+        return block;
     }
 
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole,GameRole gameRole){
@@ -35,7 +39,7 @@ public class BlockCommand extends Command {
             return;
         }
         else{
-            System.out.println("此处不可设置" + blockTool.name);
+            System.out.println("此处不可设置" + blockTool.getName());
             return;
         }
     }

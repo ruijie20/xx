@@ -12,7 +12,7 @@ import Rich.GameRole;
  * To change this template use File | Settings | File Templates.
  */
 public class QuitCommand extends Command {
-    public String quit = "quit";
+    private String quit = "quit";
 
     public QuitCommand(){
     }
@@ -21,6 +21,9 @@ public class QuitCommand extends Command {
         System.exit(0);
     }
 
+    public String getCommand(){
+        return quit;
+    }
     public String getHelp(){
         return "quit           强制退出。";
     }

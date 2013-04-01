@@ -13,13 +13,17 @@ import Rich.Tool.GameTool;
  */
 public class SellToolCommand extends Command {
     private int num;
-    public String SellTool = "selltool";
+    private String sellTool = "selltool";
 
     public SellToolCommand(){
     }
 
     public void setToolNum(int num) {
         this.num = num;
+    }
+
+    public String getCommand(){
+        return sellTool;
     }
 
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole, GameRole gameRole){
@@ -43,6 +47,6 @@ public class SellToolCommand extends Command {
     }
 
     public String getHelp(){
-        return "SellTool x     出售已有的道具，x为道具编号。";
+        return "sellTool x     出售已有的道具，x为道具编号。";
     }
 }

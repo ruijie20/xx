@@ -14,9 +14,13 @@ import Rich.Tool.GameTool;
  */
 public class RobotCommand extends Command {
     GameMarks gameMarks = new GameMarks();
-    public String robot = "robot";
+    private String robot = "robot";
 
     public RobotCommand(){
+    }
+
+    public String getCommand(){
+        return robot;
     }
 
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole,GameRole gameRole){
