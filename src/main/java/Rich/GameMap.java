@@ -1,5 +1,4 @@
 package Rich;
-import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 import static org.fusesource.jansi.Ansi.*;
 import static org.fusesource.jansi.Ansi.Color.*;
@@ -7,10 +6,7 @@ import static org.fusesource.jansi.Ansi.Color.*;
 import java.util.ArrayList;
 
 public class GameMap {
-    //public static final String RED = "\u001B[0;31m";
-    //public static final String YELLOW = "\u001B[0;33m";
-    //public static final String BLUE = "\u001B[0;34m";
-    //public static final String GREEN = "\u001B[0;32m";
+
     public static final int WIDTH = 29;
     public static final int HEIGHT = 8;
     public static int LAND_AMOUNT;
@@ -117,7 +113,7 @@ public class GameMap {
     }
 
     private void printMark(ArrayList<GameRole> gameRoles, int owner, String mark) {
-        if (IsNoOwner(owner)){
+        if (isNoOwner(owner)){
             System.out.print(mark);
         }
         else {
@@ -155,7 +151,7 @@ public class GameMap {
         AnsiConsole.systemUninstall();
     }
 
-    private boolean IsNoOwner(int owner) {
+    private boolean isNoOwner(int owner) {
         return owner == NOOWNER || owner == GOVERNMENT;
     }
 

@@ -3,13 +3,7 @@ package Rich;
 import Rich.Tool.BlockTool;
 import Rich.Tool.BombTool;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-8
- * Time: 下午1:35
- * To change this template use File | Settings | File Templates.
- */
+
 public class GameMarks {
     public String blankLand = "0";
     public String bothyLand = "1";

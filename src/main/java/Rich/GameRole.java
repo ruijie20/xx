@@ -4,13 +4,7 @@ import Rich.Tool.GameTool;
 
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-6
- * Time: 下午4:14
- * To change this template use File | Settings | File Templates.
- */
+
 public class GameRole {
     public static final int initializeFund = 10000;
     public static final int initializePoints = 0;
@@ -37,8 +31,7 @@ public class GameRole {
     private GameMarks gameMarks = new GameMarks();
 
     public GameRole(){
-        lands = new ArrayList<Land>();
-        tools = new ArrayList<GameTool>();
+
     }
 
     public GameRole(int roleNum, String name, String symbol, String color) {
@@ -72,7 +65,7 @@ public class GameRole {
     }
 
     public int getBlankLandAmount() {
-        if (CheckHasNoLands()) return 0;
+        if (checkHasNoLands()) return 0;
         return CountLandAmount(gameMarks.blankLand);
     }
 
@@ -95,7 +88,7 @@ public class GameRole {
     private String getLandNum(String landMark) {
         String blankLandNum = "";
         for (int i = 0; i < lands.size(); i ++){
-            if (CheckLandLevel(i, landMark)){
+            if (checkLandLevel(i, landMark)){
                 blankLandNum += Integer.toString(lands.get(i).getLandNum()) + ".";
             }
         }
@@ -103,35 +96,35 @@ public class GameRole {
     }
 
     public int getBothyAmount() {
-        if (CheckHasNoLands()) return 0;
+        if (checkHasNoLands()) return 0;
         return CountLandAmount(gameMarks.bothyLand);
     }
 
     public int getHouseLandAmount(){
-        if (CheckHasNoLands()) return 0;
+        if (checkHasNoLands()) return 0;
         return CountLandAmount(gameMarks.houseLand);
     }
 
     public int getSkyscraperLandAmount(){
-        if (CheckHasNoLands()) return 0;
+        if (checkHasNoLands()) return 0;
         return CountLandAmount(gameMarks.skyscraperLand);
     }
 
     private int CountLandAmount(String landMark) {
         int num = 0;
         for (int i = 0; i < lands.size(); i ++){
-            if (CheckLandLevel(i, landMark)){
+            if (checkLandLevel(i, landMark)){
                 num ++;
             }
         }
         return num;
     }
 
-    private boolean CheckLandLevel(int i, String landMark) {
+    private boolean checkLandLevel(int i, String landMark) {
         return lands.get(i).getMark().equals(landMark);
     }
 
-    private boolean CheckHasNoLands() {
+    private boolean checkHasNoLands() {
         return lands == null;
     }
 
@@ -188,22 +181,22 @@ public class GameRole {
 
 
     public int getBlockToolAmount(){
-        if (CheckHasNoTools()) return 0;
-        return CountToolAmount(BLOCK_NUM);
+        if (checkNoTools()) return 0;
+        return countToolAmount(BLOCK_NUM);
     }
 
     public int getRobotToolAmount(){
-        if (CheckHasNoTools()) return 0;
-        return CountToolAmount(ROBOT_NUM);
+        if (checkNoTools()) return 0;
+        return countToolAmount(ROBOT_NUM);
 
     }
 
     public int getBombToolAmount(){
-        if (CheckHasNoTools()) return 0;
-        return CountToolAmount(BOMB_NUM);
+        if (checkNoTools()) return 0;
+        return countToolAmount(BOMB_NUM);
     }
 
-    private int CountToolAmount(int toolNum) {
+    private int countToolAmount(int toolNum) {
         int num = 0;
         for (int i = 0; i < tools.size(); i ++){
              if (tools.get(i).getNum() == toolNum){
@@ -213,7 +206,7 @@ public class GameRole {
         return num;
     }
 
-    private boolean CheckHasNoTools() {
+    private boolean checkNoTools() {
         if (tools == null){
             return true;
         }

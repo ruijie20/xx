@@ -7,13 +7,7 @@ import java.util.Iterator;
 
 import Rich.Command.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-10
- * Time: 下午5:02
- * To change this template use File | Settings | File Templates.
- */
+
 public class Game {
     public static final String RED = "red";
     public static final String GREEN = "green";
@@ -25,13 +19,10 @@ public class Game {
     private GameMap mapWithoutRoles;
     private GameMap mapWithRoles;
     private RollCommand rollCommand;
-
     public static final int NOOWNER = 0;
-    public static final int GOVERNMENT = 100;
     Scanner scanner = new Scanner(System.in);
     int fund;
-
-    CommandCreater commandCreater = new CommandCreater();
+    CommandBuilt commandBuilt;
 
 
     public Game(){
@@ -65,11 +56,12 @@ public class Game {
 
         Iterator<GameRole> roleIter;
         rollCommand = new RollCommand();
+        commandBuilt = new CommandBuilt();
         while (true){
             roleIter = gameRolesChosen.iterator();
             Loop: while (roleIter.hasNext()){
                 GameRole role = roleIter.next();
-                if (IsSkipRound(role)) continue;
+                if (isSkipRound(role)) continue;
                 mapWithRoles.getLand(role.getPosition()).setMark(role.getSymbol());
                 mapWithRoles.print(gameRolesChosen);
                 while (true){
@@ -77,8 +69,8 @@ public class Game {
                     String lowercaseCommand = getCommand();
                     if (lowercaseCommand.equals(rollCommand.getCommand())){
                         rollCommand.executeCommand(mapWithoutRoles,mapWithRoles,role);
-                        if (IsWinner(role)) return;
-                        IsPayFee(role);
+                        if (isWinner(role)) return;
+                        isPayFee(role);
                         if (role.getFund() < 0) {
                             System.out.println(role.getName() + "已破产");
                             ArrayList<Land> lands = role.getLands();
@@ -94,7 +86,7 @@ public class Game {
                         }
                         break;
                     }
-                    commandCreater.handleCommand(role, lowercaseCommand, mapWithoutRoles, mapWithRoles);
+                    commandBuilt.handleCommand(role, lowercaseCommand, mapWithoutRoles, mapWithRoles);
                 }
             }
             if (gameRolesChosen.size() < 2){
@@ -105,7 +97,7 @@ public class Game {
         }
     }
 
-    private boolean IsWinner(GameRole role) {
+    private boolean isWinner(GameRole role) {
         if (role.winner == true){
             return true;
         }
@@ -114,15 +106,15 @@ public class Game {
 
 
 
-    private void IsPayFee(GameRole role) {
+    private void isPayFee(GameRole role) {
         int position = role.getPosition();
         int owner = mapWithoutRoles.getLand(role.getPosition()).getOwner();
         for (int i = 0; i < gameRolesChosen.size(); i ++) {
             GameRole currentRole = gameRolesChosen.get(i);
             if (currentRole.getRoleNum() == owner && owner != role.getRoleNum()) {
                 int currentPosition = currentRole.getPosition();
-                if (IsOwnerInPrison(currentPosition)) return;
-                if (IsOwnerInHospital(currentPosition)) return;
+                if (isOwnerInPrison(currentPosition)) return;
+                if (isOwnerInHospital(currentPosition)) return;
                 if (role.getMascotRound() != 0) {
                     role.setMascotRound(role.getMascotRound() - 1);
                     System.out.println("福神附身，免过路费!");
@@ -136,10 +128,10 @@ public class Game {
 
             }
         }
-        IsMascot(role);
+        isMascot(role);
     }
 
-    private boolean IsOwnerInHospital(int currentPosition) {
+    private boolean isOwnerInHospital(int currentPosition) {
         if (mapWithoutRoles.getLand(currentPosition).equals(gameMarks.hospital)){
             System.out.println("拥有者在医院，免过路费");
             return true;
@@ -147,7 +139,7 @@ public class Game {
         return false;
     }
 
-    private boolean IsOwnerInPrison(int currentPosition) {
+    private boolean isOwnerInPrison(int currentPosition) {
         if (mapWithoutRoles.getLand(currentPosition).getMark().equals(gameMarks.prison)){
             System.out.println("拥有者在监狱，免过路费");
             return true;
@@ -165,15 +157,15 @@ public class Game {
 
 
 
-    private boolean IsSkipRound(GameRole role) {
+    private boolean isSkipRound(GameRole role) {
         if (role.getHospitalDays() != 0){
-            IsMascot(role);
+            isMascot(role);
             System.out.println("你还需在医院休养" + role.getHospitalDays() + "天");
             role.setHospitalDays(role.getHospitalDays() - 1);
             return true;
         }
         if (role.getPrisonDays() != 0){
-            IsMascot(role);
+            isMascot(role);
             System.out.println("你还在监狱服刑中，还有" + role.getPrisonDays() + "天");
             role.setPrisonDays(role.getPrisonDays() - 1);
             return true;
@@ -182,7 +174,7 @@ public class Game {
     }
 
 
-    private void IsMascot(GameRole role) {
+    private void isMascot(GameRole role) {
         if (role.getMascotRound() != 0){
             role.setMascotRound(role.getMascotRound() - 1);
             System.out.println("福神附身还有" + role.getMascotRound() + "天");
@@ -201,11 +193,10 @@ public class Game {
                 throw new IllegalArgumentException("输入玩家编号过多，最多4名");
             }
             for (int i = 0; i < roleNum.length(); i ++){
-                 //gameRolesChosen.add(gameRoles.get(Integer.valueOf(roleNum.substring(i,1)) - 1));
                  gameRolesChosen.add(gameRoles.get(roleNum.charAt(i) - 49));
                  gameRolesChosen.get(i).setFund(fund);
             }
-            CheckDuplicated();
+            checkDuplicated();
         }
         catch (Exception e){
             gameRolesChosen.clear();
@@ -213,7 +204,7 @@ public class Game {
         }
     }
 
-    private void CheckDuplicated() {
+    private void checkDuplicated() {
         for (int i = 0; i < gameRolesChosen.size() - 1; i ++){
             for (int j = i + 1; j < gameRolesChosen.size(); j ++){
                 if (gameRolesChosen.get(i).getName().equals(gameRolesChosen.get(j).getName())){

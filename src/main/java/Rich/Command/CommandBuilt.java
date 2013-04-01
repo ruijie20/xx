@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Time: 下午3:39
  * To change this template use File | Settings | File Templates.
  */
-public class CommandCreater {
+public class CommandBuilt {
     public Command[] commandInitialize(){
         Command[] commands = new Command[9];
         int i = 0;
