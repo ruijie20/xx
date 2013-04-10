@@ -1,5 +1,6 @@
 package Rich;
 
+import Rich.GameRole.GameRole;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -7,13 +8,7 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-6
- * Time: 下午4:08
- * To change this template use File | Settings | File Templates.
- */
+
 public class GameRoleTest {
     GameRole ATuBo = new GameRole(1,"ATuBo","A","Blue");
 

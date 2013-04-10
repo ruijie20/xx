@@ -1,29 +1,22 @@
 package Rich.Command;
 
 import Rich.*;
-import Rich.Tool.BlockTool;
+import Rich.GameRole.GameRole;
 import Rich.Tool.GameTool;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-10
- * Time: 下午3:27
- * To change this template use File | Settings | File Templates.
- */
+
 public class BlockCommand extends Command {
     public static final int MAP_LOWER_RANGE = 0;
     public static final int MAP_UPPER_RANGE = 69;
     GameMarks gameMarks = new GameMarks();
     private int offset;
-    BlockTool blockTool = new BlockTool();
     private String block = "block";
 
     public BlockCommand(){
 
     }
 
-    public void setOffset(int offset) {
+    public void setNum(int offset) {
         this.offset = offset;
     }
 
@@ -39,7 +32,7 @@ public class BlockCommand extends Command {
             return;
         }
         else{
-            System.out.println("此处不可设置" + blockTool.getName());
+            System.out.println("此处不可设置" + GameTool.BLOCK.tag());
             return;
         }
     }
@@ -48,12 +41,12 @@ public class BlockCommand extends Command {
         int i = 0;
         for (; i < gameRole.getTools().size(); i ++){
             GameTool tool = gameRole.getTools().get(i);
-            if (tool.getName().equals("路障")){
+            if (tool.tag().equals("路障")){
                 gameRole.getTools().remove(i);
-                break;
+                return false;
             }
         }
-        if (i == gameRole.getLands().size()){
+        if (i == gameRole.getTools().size()){
             System.out.println("你没有该道具!");
             return true;
         }

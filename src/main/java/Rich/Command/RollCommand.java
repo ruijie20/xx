@@ -1,20 +1,12 @@
 package Rich.Command;
 
 import Rich.*;
-import Rich.Tool.BlockTool;
-import Rich.Tool.BombTool;
+import Rich.GameRole.GameRole;
 import Rich.Tool.GameTool;
-import Rich.Tool.RobotTool;
 
 import java.util.Scanner;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-7
- * Time: 下午5:08
- * To change this template use File | Settings | File Templates.
- */
+
 public class RollCommand extends Command {
     public static final int HOSPITAL_DAYS = 3;
     public static final int PRISON_DAYS = 2;
@@ -83,40 +75,26 @@ public class RollCommand extends Command {
                 Scanner scanner = new Scanner(System.in);
                 String toolNum = scanner.next();
                 if (toolNum.equals("F")) break;
-                if (BuyBlockTool(gameRole, toolNum)) continue;
-                if (BuyRobotTool(gameRole, toolNum)) continue;
-                if (BuyBombTool(gameRole, toolNum))continue;
+                buyTool(gameRole, toolNum);
             }
             return;
         }
     }
 
-    private boolean BuyBombTool(GameRole gameRole, String toolNum){
-        if (toolNum.equals("3")){
-            BombTool bombTool = new BombTool();
-            getTool(gameRole,bombTool);
-            return true;
+    private void buyTool(GameRole gameRole, String toolNum) {
+        switch (Integer.parseInt(toolNum)){
+            case 1:
+                getTool(gameRole, GameTool.BLOCK);
+                return;
+            case 2:
+                getTool(gameRole,GameTool.ROBOT);
+                return;
+            case 3:
+                getTool(gameRole,GameTool.BOMB);
+                return;
         }
-        return false;
     }
 
-    private boolean BuyRobotTool(GameRole gameRole, String toolNum) {
-        if (toolNum.equals("2")) {
-            RobotTool robotTool = new RobotTool();
-            getTool(gameRole, robotTool);
-            return true;
-        }
-        return false;
-    }
-
-    private boolean BuyBlockTool(GameRole gameRole, String toolNum) {
-        if (toolNum.equals("1")) {
-            BlockTool blockTool = new BlockTool();
-            getTool(gameRole, blockTool);
-            return true;
-        }
-        return false;
-    }
 
     private void PrintToolHouseMessage() {
         System.out.println("欢迎光临道具屋，请选择您所需要的道具(输入编号,F可退出)：");
@@ -127,13 +105,13 @@ public class RollCommand extends Command {
     }
 
     private void getTool(GameRole gameRole, GameTool gameTool) {
-        if (gameRole.getPoints() < gameTool.getPoints()) {
+        if (gameRole.getPoints() < gameTool.points()) {
             System.out.println("点数不足不可购买");
             return;
         }
 
         gameRole.getTools().add(gameTool);
-        gameRole.setPoints(gameRole.getPoints() - gameTool.getPoints());
+        gameRole.setPoints(gameRole.getPoints() - gameTool.points());
     }
 
     private void IsInGiftHouse(GameRole gameRole, Land currentLand) {

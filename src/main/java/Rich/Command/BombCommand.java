@@ -1,28 +1,21 @@
 package Rich.Command;
 
 import Rich.*;
-import Rich.Tool.BombTool;
+import Rich.GameRole.GameRole;
 import Rich.Tool.GameTool;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-10
- * Time: 下午4:00
- * To change this template use File | Settings | File Templates.
- */
+
 public class BombCommand extends Command {
     public static final int MAP_LOWER_RANGE = 0;
     public static final int MAP_UPPER_RANGE = 69;
     GameMarks gameMarks = new GameMarks();
     private int offset;
-    BombTool bombTool = new BombTool();
     private String bomb = "bomb";
 
     public BombCommand(){
     }
 
-    public void setOffset(int offset) {
+    public void setNum(int offset) {
         this.offset = offset;
     }
 
@@ -38,7 +31,7 @@ public class BombCommand extends Command {
             return;
         }
         else{
-            System.out.println("此处不可设置" + bombTool.getName());
+            System.out.println("此处不可设置" + GameTool.BOMB.tag());
             return;
         }
     }
@@ -47,7 +40,7 @@ public class BombCommand extends Command {
         int i = 0;
         for (; i < gameRole.getTools().size(); i ++){
             GameTool tool = gameRole.getTools().get(i);
-            if (tool.getName().equals("炸弹")){
+            if (tool.tag().equals("炸弹")){
                 gameRole.getTools().remove(i);
                 break;
             }

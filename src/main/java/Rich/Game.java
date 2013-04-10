@@ -2,23 +2,22 @@ package Rich;
 
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Iterator;
 
 import Rich.Command.*;
-
+import Rich.GameRole.*;
 
 public class Game {
-    public static final String RED = "red";
-    public static final String GREEN = "green";
-    public static final String YELLOW = "yellow";
-    public static final String BLUE = "blue";
-    private ArrayList<GameRole> gameRoles;
+
     private ArrayList<GameRole> gameRolesChosen;
     private GameMarks gameMarks = new GameMarks();
     private GameMap mapWithoutRoles;
     private GameMap mapWithRoles;
     private RollCommand rollCommand;
+    ArrayList<GameRole> gameRoles = new ArrayList<GameRole>();
+    GameRolesBuilt gameRolesBuilt = new GameRolesBuilt();
     public static final int NOOWNER = 0;
     Scanner scanner = new Scanner(System.in);
     int fund;
@@ -26,7 +25,6 @@ public class Game {
 
 
     public Game(){
-        gameRoles = new ArrayList<GameRole>();
         gameRolesChosen = new ArrayList<GameRole>();
         mapWithoutRoles = new GameMap();
         mapWithRoles = new GameMap();
@@ -34,7 +32,7 @@ public class Game {
 
     public void run(){
         System.out.println("大富翁游戏开始");
-        buildGameRoles();
+
         while (true){
             try{
                 initializeFund();
@@ -44,7 +42,7 @@ public class Game {
             }
 
         }
-
+        gameRoles = gameRolesBuilt.initializeGameRoles();
         while (true){
             try{
                 initializeGameRoles();
@@ -56,6 +54,7 @@ public class Game {
 
         Iterator<GameRole> roleIter;
         rollCommand = new RollCommand();
+
         commandBuilt = new CommandBuilt();
         while (true){
             roleIter = gameRolesChosen.iterator();
@@ -149,7 +148,7 @@ public class Game {
 
 
     private String getCommand() {
-        String command = scanner.next();
+        String command = scanner.nextLine();
         return command.toLowerCase();
     }
 
@@ -233,10 +232,5 @@ public class Game {
         }
     }
 
-    private void buildGameRoles() {
-        gameRoles.add(new GameRole(1,"钱夫人","Q",RED));
-        gameRoles.add(new GameRole(2,"阿土伯","A",BLUE));
-        gameRoles.add(new GameRole(3,"孙小美","S",GREEN));
-        gameRoles.add(new GameRole(4,"金贝贝","J",YELLOW));
-    }
+
 }

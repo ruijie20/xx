@@ -1,16 +1,9 @@
 package Rich.Command;
 
 import Rich.GameMap;
-import Rich.GameRole;
+import Rich.GameRole.GameRole;
 import Rich.Tool.GameTool;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-13
- * Time: 下午12:27
- * To change this template use File | Settings | File Templates.
- */
 public class SellToolCommand extends Command {
     private int num;
     private String sellTool = "selltool";
@@ -18,7 +11,7 @@ public class SellToolCommand extends Command {
     public SellToolCommand(){
     }
 
-    public void setToolNum(int num) {
+    public void setNum(int num) {
         this.num = num;
     }
 
@@ -34,8 +27,8 @@ public class SellToolCommand extends Command {
         int i = 0;
         for (; i < gameRole.getTools().size(); i ++){
             GameTool tool = gameRole.getTools().get(i);
-            if (tool.getNum() == num){
-                gameRole.setPoints(gameRole.getPoints() + tool.getPoints());
+            if (tool.num() == num){
+                gameRole.setPoints(gameRole.getPoints() + tool.points());
                 gameRole.getTools().remove(i);
                 return;
             }

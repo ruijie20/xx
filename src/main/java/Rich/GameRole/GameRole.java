@@ -1,5 +1,7 @@
-package Rich;
+package Rich.GameRole;
 
+import Rich.GameMarks;
+import Rich.Land;
 import Rich.Tool.GameTool;
 
 import java.util.ArrayList;
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 
 public class GameRole {
     public static final int initializeFund = 10000;
-    public static final int initializePoints = 0;
+    public static final int initializePoints = 100;
     public static final int initializePosition = 0;
     private static final int initializePrisonDays = 0;
     private static final int initializeHospitalDays = 0;
@@ -199,7 +201,7 @@ public class GameRole {
     private int countToolAmount(int toolNum) {
         int num = 0;
         for (int i = 0; i < tools.size(); i ++){
-             if (tools.get(i).getNum() == toolNum){
+             if (tools.get(i).num() == toolNum){
                  num ++;
              }
         }

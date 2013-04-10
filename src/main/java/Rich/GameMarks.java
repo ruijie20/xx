@@ -1,8 +1,7 @@
 package Rich;
 
-import Rich.Tool.BlockTool;
-import Rich.Tool.BombTool;
 
+import Rich.Tool.GameTool;
 
 public class GameMarks {
     public String blankLand = "0";
@@ -20,10 +19,8 @@ public class GameMarks {
     public String pit = "$";
 
     public GameMarks() {
-        this.block = blockTool.getMark();
-        this.bomb = bombTool.getMark();
+        this.block = GameTool.BLOCK.mark();
+        this.bomb = GameTool.BOMB.mark();
     }
 
-    BlockTool blockTool = new BlockTool();
-    BombTool bombTool = new BombTool();
 }

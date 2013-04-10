@@ -2,16 +2,9 @@ package Rich.Command;
 
 import Rich.GameMap;
 import Rich.GameMarks;
-import Rich.GameRole;
+import Rich.GameRole.GameRole;
 import Rich.Land;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-13
- * Time: 下午12:01
- * To change this template use File | Settings | File Templates.
- */
 public class SellCommand extends Command {
     public static final int NOOWNER = 0;
     GameMarks gameMarks = new GameMarks();
@@ -22,7 +15,7 @@ public class SellCommand extends Command {
     public SellCommand(){
     }
 
-    public void setLandNum(int num) {
+    public void setNum(int num) {
         this.num = num;
     }
 

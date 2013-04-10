@@ -1,6 +1,7 @@
 package Rich.Command;
 
 import Rich.*;
+import Rich.GameRole.GameRole;
 
 
 public class HelpCommand extends Command {

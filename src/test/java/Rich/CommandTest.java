@@ -4,19 +4,14 @@ import Rich.Command.HelpCommand;
 import Rich.Command.QueryCommand;
 import Rich.Command.RobotCommand;
 import Rich.Command.RollCommand;
+import Rich.GameRole.GameRole;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-7
- * Time: 下午3:16
- * To change this template use File | Settings | File Templates.
- */
+
 public class CommandTest {
 
     GameMarks gameMarks = new GameMarks();

@@ -1,12 +1,6 @@
 package Rich;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-6
- * Time: 下午1:44
- * To change this template use File | Settings | File Templates.
- */
+
 public class Land {
     private final int landNum;
     private int price;

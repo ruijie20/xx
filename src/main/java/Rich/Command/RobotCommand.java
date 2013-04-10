@@ -2,16 +2,10 @@ package Rich.Command;
 
 import Rich.GameMap;
 import Rich.GameMarks;
-import Rich.GameRole;
+import Rich.GameRole.GameRole;
 import Rich.Tool.GameTool;
 
-/**
- * Created with IntelliJ IDEA.
- * User: flocl
- * Date: 13-2-8
- * Time: 下午2:37
- * To change this template use File | Settings | File Templates.
- */
+
 public class RobotCommand extends Command {
     GameMarks gameMarks = new GameMarks();
     private String robot = "robot";
@@ -24,7 +18,7 @@ public class RobotCommand extends Command {
     }
 
     public void executeCommand(GameMap mapWithoutRole, GameMap mapWithRole,GameRole gameRole){
-        if (HasTool(gameRole)) return;
+        if (hasTool(gameRole)) return;
         int tempPosition = gameRole.getPosition() + 1;
         for (; tempPosition < gameRole.getPosition() + 11; tempPosition ++){
             IsMeetTool(mapWithoutRole, mapWithRole, tempPosition, gameMarks.bomb);
@@ -32,11 +26,11 @@ public class RobotCommand extends Command {
         }
     }
 
-    private boolean HasTool(GameRole gameRole) {
+    private boolean hasTool(GameRole gameRole) {
         int i = 0;
         for (; i < gameRole.getTools().size(); i ++){
             GameTool tool = gameRole.getTools().get(i);
-            if (tool.getName().equals("炸弹")){
+            if (tool.tag().equals("炸弹")){
                 gameRole.getTools().remove(i);
                 break;
             }
